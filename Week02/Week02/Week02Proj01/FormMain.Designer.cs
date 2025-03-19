@@ -1,300 +1,265 @@
-﻿namespace Week02Proj01
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Week02Proj01
 {
-    partial class FormMain
+    public partial class FormMain: Form  //:Form 상속
     {
-        /// <summary>
-        /// 필수 디자이너 변수입니다.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
-        /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
-        protected override void Dispose(bool disposing)
+        public FormMain()  //생성자
         {
-            if (disposing && (components != null))
+            InitializeComponent();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOutput01_Click(object sender, EventArgs e)
+        {
+            bool isToggle = chkToggle.Checked; //true or false
+            if (isToggle)                      //
             {
-                components.Dispose();
+                string data1 = tbxInput1.Text;
+                string data2 = tbxInput2.Text;
+                string result = data1 + data2; //문자열 연결 연산자
+                lblResult.Text = result;
             }
-            base.Dispose(disposing);
+            else
+            {
+                int data1 = int.Parse(tbxInput1.Text);
+                int data2 = int.Parse(tbxInput2.Text);
+                int result = data1 + data2; //산술 연산자
+                lblResult.Text = result.ToString();
+            }
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
-
-        /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
-        /// </summary>
-        private void InitializeComponent()
+        private void btnOutput02_Click(object sender, EventArgs e)
         {
-            this.tbxInput1 = new System.Windows.Forms.TextBox();
-            this.tbxInput2 = new System.Windows.Forms.TextBox();
-            this.tbxInput3 = new System.Windows.Forms.TextBox();
-            this.tbxInput4 = new System.Windows.Forms.TextBox();
-            this.tbxInput5 = new System.Windows.Forms.TextBox();
-            this.btnOutput01 = new System.Windows.Forms.Button();
-            this.btnOutput02 = new System.Windows.Forms.Button();
-            this.btnOutput03 = new System.Windows.Forms.Button();
-            this.btnOutput04 = new System.Windows.Forms.Button();
-            this.btnOutput05 = new System.Windows.Forms.Button();
-            this.btnOutput06 = new System.Windows.Forms.Button();
-            this.btnOutput07 = new System.Windows.Forms.Button();
-            this.btnOutput08 = new System.Windows.Forms.Button();
-            this.btnOutput09 = new System.Windows.Forms.Button();
-            this.btnOutput10 = new System.Windows.Forms.Button();
-            this.btnOutput11 = new System.Windows.Forms.Button();
-            this.btnOutput13 = new System.Windows.Forms.Button();
-            this.btnOutput12 = new System.Windows.Forms.Button();
-            this.btnOutput14 = new System.Windows.Forms.Button();
-            this.btnOutput15 = new System.Windows.Forms.Button();
-            this.chkToggle = new System.Windows.Forms.CheckBox();
-            this.lblResult = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // tbxInput1
-            // 
-            this.tbxInput1.Location = new System.Drawing.Point(12, 12);
-            this.tbxInput1.Name = "tbxInput1";
-            this.tbxInput1.Size = new System.Drawing.Size(100, 21);
-            this.tbxInput1.TabIndex = 0;
-            // 
-            // tbxInput2
-            // 
-            this.tbxInput2.Location = new System.Drawing.Point(118, 12);
-            this.tbxInput2.Name = "tbxInput2";
-            this.tbxInput2.Size = new System.Drawing.Size(100, 21);
-            this.tbxInput2.TabIndex = 0;
-            // 
-            // tbxInput3
-            // 
-            this.tbxInput3.Location = new System.Drawing.Point(223, 12);
-            this.tbxInput3.Name = "tbxInput3";
-            this.tbxInput3.Size = new System.Drawing.Size(100, 21);
-            this.tbxInput3.TabIndex = 0;
-            // 
-            // tbxInput4
-            // 
-            this.tbxInput4.Location = new System.Drawing.Point(329, 12);
-            this.tbxInput4.Name = "tbxInput4";
-            this.tbxInput4.Size = new System.Drawing.Size(100, 21);
-            this.tbxInput4.TabIndex = 0;
-            // 
-            // tbxInput5
-            // 
-            this.tbxInput5.Location = new System.Drawing.Point(435, 12);
-            this.tbxInput5.Name = "tbxInput5";
-            this.tbxInput5.Size = new System.Drawing.Size(100, 21);
-            this.tbxInput5.TabIndex = 0;
-            // 
-            // btnOutput01
-            // 
-            this.btnOutput01.Location = new System.Drawing.Point(12, 39);
-            this.btnOutput01.Name = "btnOutput01";
-            this.btnOutput01.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput01.TabIndex = 1;
-            this.btnOutput01.Text = "가감 1";
-            this.btnOutput01.UseVisualStyleBackColor = true;
-            this.btnOutput01.Click += new System.EventHandler(this.btnOutput01_Click);
-            // 
-            // btnOutput02
-            // 
-            this.btnOutput02.Location = new System.Drawing.Point(118, 39);
-            this.btnOutput02.Name = "btnOutput02";
-            this.btnOutput02.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput02.TabIndex = 1;
-            this.btnOutput02.Text = " 가감2";
-            this.btnOutput02.UseVisualStyleBackColor = true;
-            this.btnOutput02.Click += new System.EventHandler(this.btnOutput02_Click);
-            // 
-            // btnOutput03
-            // 
-            this.btnOutput03.Location = new System.Drawing.Point(223, 39);
-            this.btnOutput03.Name = "btnOutput03";
-            this.btnOutput03.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput03.TabIndex = 1;
-            this.btnOutput03.Text = "가감3";
-            this.btnOutput03.UseVisualStyleBackColor = true;
-            this.btnOutput03.Click += new System.EventHandler(this.btnOutput03_Click);
-            // 
-            // btnOutput04
-            // 
-            this.btnOutput04.Location = new System.Drawing.Point(329, 39);
-            this.btnOutput04.Name = "btnOutput04";
-            this.btnOutput04.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput04.TabIndex = 1;
-            this.btnOutput04.Text = "가감4";
-            this.btnOutput04.UseVisualStyleBackColor = true;
-            this.btnOutput04.Click += new System.EventHandler(this.btnOutput04_Click);
-            // 
-            // btnOutput05
-            // 
-            this.btnOutput05.Location = new System.Drawing.Point(435, 39);
-            this.btnOutput05.Name = "btnOutput05";
-            this.btnOutput05.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput05.TabIndex = 1;
-            this.btnOutput05.Text = "문자와문자열";
-            this.btnOutput05.UseVisualStyleBackColor = true;
-            this.btnOutput05.Click += new System.EventHandler(this.btnOutput05_Click);
-            // 
-            // btnOutput06
-            // 
-            this.btnOutput06.Location = new System.Drawing.Point(12, 73);
-            this.btnOutput06.Name = "btnOutput06";
-            this.btnOutput06.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput06.TabIndex = 1;
-            this.btnOutput06.Text = "형변환";
-            this.btnOutput06.UseVisualStyleBackColor = true;
-            this.btnOutput06.Click += new System.EventHandler(this.btnOutput06_Click);
-            // 
-            // btnOutput07
-            // 
-            this.btnOutput07.Location = new System.Drawing.Point(223, 73);
-            this.btnOutput07.Name = "btnOutput07";
-            this.btnOutput07.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput07.TabIndex = 1;
-            this.btnOutput07.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput08
-            // 
-            this.btnOutput08.Location = new System.Drawing.Point(118, 73);
-            this.btnOutput08.Name = "btnOutput08";
-            this.btnOutput08.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput08.TabIndex = 1;
-            this.btnOutput08.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput09
-            // 
-            this.btnOutput09.Location = new System.Drawing.Point(329, 73);
-            this.btnOutput09.Name = "btnOutput09";
-            this.btnOutput09.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput09.TabIndex = 1;
-            this.btnOutput09.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput10
-            // 
-            this.btnOutput10.Location = new System.Drawing.Point(435, 73);
-            this.btnOutput10.Name = "btnOutput10";
-            this.btnOutput10.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput10.TabIndex = 1;
-            this.btnOutput10.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput11
-            // 
-            this.btnOutput11.Location = new System.Drawing.Point(12, 107);
-            this.btnOutput11.Name = "btnOutput11";
-            this.btnOutput11.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput11.TabIndex = 1;
-            this.btnOutput11.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput13
-            // 
-            this.btnOutput13.Location = new System.Drawing.Point(223, 107);
-            this.btnOutput13.Name = "btnOutput13";
-            this.btnOutput13.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput13.TabIndex = 1;
-            this.btnOutput13.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput12
-            // 
-            this.btnOutput12.Location = new System.Drawing.Point(118, 107);
-            this.btnOutput12.Name = "btnOutput12";
-            this.btnOutput12.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput12.TabIndex = 1;
-            this.btnOutput12.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput14
-            // 
-            this.btnOutput14.Location = new System.Drawing.Point(329, 107);
-            this.btnOutput14.Name = "btnOutput14";
-            this.btnOutput14.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput14.TabIndex = 1;
-            this.btnOutput14.UseVisualStyleBackColor = true;
-            // 
-            // btnOutput15
-            // 
-            this.btnOutput15.Location = new System.Drawing.Point(435, 107);
-            this.btnOutput15.Name = "btnOutput15";
-            this.btnOutput15.Size = new System.Drawing.Size(100, 28);
-            this.btnOutput15.TabIndex = 1;
-            this.btnOutput15.UseVisualStyleBackColor = true;
-            // 
-            // chkToggle
-            // 
-            this.chkToggle.AutoSize = true;
-            this.chkToggle.Location = new System.Drawing.Point(541, 18);
-            this.chkToggle.Name = "chkToggle";
-            this.chkToggle.Size = new System.Drawing.Size(15, 14);
-            this.chkToggle.TabIndex = 2;
-            this.chkToggle.UseVisualStyleBackColor = true;
-            // 
-            // lblResult
-            // 
-            this.lblResult.BackColor = System.Drawing.Color.White;
-            this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblResult.Location = new System.Drawing.Point(12, 149);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(624, 233);
-            this.lblResult.TabIndex = 3;
-            // 
-            // FormMain
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 391);
-            this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.chkToggle);
-            this.Controls.Add(this.btnOutput15);
-            this.Controls.Add(this.btnOutput10);
-            this.Controls.Add(this.btnOutput05);
-            this.Controls.Add(this.btnOutput14);
-            this.Controls.Add(this.btnOutput09);
-            this.Controls.Add(this.btnOutput04);
-            this.Controls.Add(this.btnOutput12);
-            this.Controls.Add(this.btnOutput13);
-            this.Controls.Add(this.btnOutput08);
-            this.Controls.Add(this.btnOutput07);
-            this.Controls.Add(this.btnOutput11);
-            this.Controls.Add(this.btnOutput02);
-            this.Controls.Add(this.btnOutput06);
-            this.Controls.Add(this.btnOutput03);
-            this.Controls.Add(this.btnOutput01);
-            this.Controls.Add(this.tbxInput5);
-            this.Controls.Add(this.tbxInput4);
-            this.Controls.Add(this.tbxInput3);
-            this.Controls.Add(this.tbxInput2);
-            this.Controls.Add(this.tbxInput1);
-            this.Name = "FormMain";
-            this.Text = "2주차";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            if(chkToggle.Checked == false)
+            {
+                int data1 = int.Parse(tbxInput1.Text);
+                int data2 = int.Parse(tbxInput2.Text);
+                int result = data1 + data2; //산술 연산자
+                lblResult.Text = "더하기:" + result.ToString();
+            }
+            else
+            {
+                int data1 = int.Parse(tbxInput1.Text);
+                int data2 = int.Parse(tbxInput2.Text);
+                int result = data1 - data2; //산술 연산자
+                lblResult.Text = "빼기:" + result;  //문자열+숫자=문자열 -> 연결연산자로 동작
+            }
+        }
+
+        private void btnOutput03_Click(object sender, EventArgs e)
+        {
+            int data1 = int.Parse(tbxInput1.Text);
+            int data2 = int.Parse(tbxInput2.Text);
+
+            if (chkToggle.Checked == false)
+            {
+                int result = data1 + data2; 
+                lblResult.Text = string.Format("더하기:{0}", result);
+            }
+            else
+            {
+                int result = data1 - data2; 
+                lblResult.Text = $"빼기:{result}";  //문자열보간법
+            }
+        }
+
+        private void btnOutput04_Click(object sender, EventArgs e)
+        {
+            double data1 = double.Parse(tbxInput1.Text);
+            double data2 = double.Parse(tbxInput2.Text);
+
+            if (chkToggle.Checked == false)
+            {
+                double result = data1 + data2; 
+                lblResult.Text = string.Format("더하기:{0}", result);
+            }
+            else
+            {
+                double result = data1 - data2; 
+                lblResult.Text = $"빼기:{result}";  //문자열보간법
+            }
+        }
+
+        private void btnOutput05_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = tbxInput1.Text;
+            lblResult.Text += Environment.NewLine;  //  "\r\n"
+            // lblResult.Text = Environment.NewLine;    문자열임
+
+            lblResult.Text += tbxInput1.Text.GetType();
+            //lblResult.Text = tbxInput1.Text.GetType();
+            
+            lblResult.Text += Environment.NewLine;
+
+            lblResult.Text += tbxInput1.Text[0];
+            //lblResult.Text = tbxInput1.Text[0];  char(문자)
+            
+            lblResult.Text += Environment.NewLine;
+            lblResult.Text += tbxInput1.Text[0].GetType();
+
+            lblResult.Text += Environment.NewLine;
+            char test1 = tbxInput1.Text[0];
+            //C언어 : 1바이트(ascii)
+            //C# : 2바이트(unicode)
+            byte result1 = (byte)test1;   //1바이트 부호 미지원 정수형
+            sbyte result4 = (sbyte)test1; //1바이트 부호 지원 정수형
+            short result2 = (short)test1; //2바이트 부호 지원 정수형  
+            ushort result3 = test1;       //2바이트 부호 미지원 정수형
+
+            lblResult.Text += $"{test1},{result1},{result2},{result3}";
+        }
+
+        private void btnOutput06_Click(object sender, EventArgs e)
+        {
+            //정수 ->실수 :ok
+            //실수 ->정수 :처리필요
+            //작은 숫자 -> 큰 숫자 : ok
+            //큰 숫자 -> 작은 숫자 : 처리 필요
+
+            int data1 = int.Parse(tbxInput1.Text);
+            float data2 = (float)double.Parse(tbxInput2.Text);
+            long data3 = long.Parse(tbxInput3.Text);
+            int data4 = (int)data3;
+            
+            double result1 = data1 + data2 + data3 + data4;
+            lblResult.Text = result1.ToString();
+
+            lblResult.Text += "\r\n";
+            lblResult.Text += "\n";
+
+            // (int)1.9+(int)1.6 = 2
+            long result2 = data1 + (long)data2 + data3 + data4; 
+            lblResult.Text += result2.ToString();
+
+            lblResult.Text += "\r\n";
+            lblResult.Text += "\n";
+            // (int)(1.9+1.6) = 3
+            long result3 = (long)(data1 + data2 + data3 + data4); 
+            lblResult.Text += result3.ToString();
 
         }
 
-        #endregion
+        private void btnOutput07_Click(object sender, EventArgs e)
+        {   //관계연산자 이용
+            bool result1 = tbxInput1.Text == tbxInput2.Text;
+            bool result2 = tbxInput2.Text == tbxInput3.Text;
+            bool result3 = tbxInput1.Text == tbxInput3.Text;
+            //논리연산자
+            if (result1 && result2 && result3){
+                lblResult.Text = "모두일치";
+            }
+            else if(result1 || result2 || result3)
+            {
+                lblResult.Text = "적어도 일치하는내용 있음";
+            }
+            else{
+                lblResult.Text = "모두 불일치";
+            }
+        }
 
-        private System.Windows.Forms.TextBox tbxInput1;
-        private System.Windows.Forms.TextBox tbxInput2;
-        private System.Windows.Forms.TextBox tbxInput3;
-        private System.Windows.Forms.TextBox tbxInput4;
-        private System.Windows.Forms.TextBox tbxInput5;
-        private System.Windows.Forms.Button btnOutput01;
-        private System.Windows.Forms.Button btnOutput02;
-        private System.Windows.Forms.Button btnOutput03;
-        private System.Windows.Forms.Button btnOutput04;
-        private System.Windows.Forms.Button btnOutput05;
-        private System.Windows.Forms.Button btnOutput06;
-        private System.Windows.Forms.Button btnOutput07;
-        private System.Windows.Forms.Button btnOutput08;
-        private System.Windows.Forms.Button btnOutput09;
-        private System.Windows.Forms.Button btnOutput10;
-        private System.Windows.Forms.Button btnOutput11;
-        private System.Windows.Forms.Button btnOutput13;
-        private System.Windows.Forms.Button btnOutput12;
-        private System.Windows.Forms.Button btnOutput14;
-        private System.Windows.Forms.Button btnOutput15;
-        private System.Windows.Forms.CheckBox chkToggle;
-        private System.Windows.Forms.Label lblResult;
+        private void btnOutput08_Click(object sender, EventArgs e)
+        {
+            var data1 = int.Parse(tbxInput1.Text);
+            var data2 = int.Parse(tbxInput2.Text);
+            string result;//지역변수-초기화 자동으로 안됨
+
+            if (data1 == data2){
+                result = "같아요";
+            }
+            else if (data1 < data2){
+                result = "뒤가 커요";
+            }
+            else{
+                result = "앞이 커요";
+            }
+            lblResult.Text = result;
+        }
+
+        private void btnOutput09_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = int.MinValue.ToString() + "\r\n";
+            lblResult.Text += int.MaxValue.ToString() + "\r\n";
+            lblResult.Text += Environment.NewLine;
+            lblResult.Text += uint.MinValue.ToString() + "\r\n";
+            lblResult.Text += uint.MinValue.ToString() + "\r\n";
+            lblResult.Text += Environment.NewLine;
+            //고정소수점형
+            lblResult.Text += decimal.MinValue.ToString() + "\n";
+            lblResult.Text += decimal.MinValue.ToString() + "\n";
+           
+        }
+
+        private void btnOutput10_Click(object sender, EventArgs e)
+        {   //배열 array
+            TextBox[] textBoxes;       //배열변수 선언(textBoxes는 주소만 아는 애)
+            textBoxes = new TextBox[5];//배열 생성 후 변수 위치 할당
+
+            textBoxes[0] = tbxInput1;
+            textBoxes[1] = tbxInput2;
+            textBoxes[2] = tbxInput3;
+            textBoxes[3] = tbxInput4;
+            textBoxes[4] = tbxInput5;
+
+            //객체지향 언어의 특징
+            //자료형은 class(or struct)로 만든다
+            //class:(값+추가 meta data) +기능...
+            int sum = 0;
+            for(int i = 0; i < textBoxes.Length; i++){
+                if (textBoxes[i].Text != null && textBoxes[i].Text.Trim() != ""){
+                    sum += int.Parse(textBoxes[i].Text);
+                }
+            }
+            lblResult.Text = "총 합" + sum;
+
+        }
+
+        private void btnOutput11_Click(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes;       //배열변수 선언(textBoxes는 주소만 아는 애)
+            textBoxes = new TextBox[5];//배열 생성 후 변수 위치 할당
+
+            textBoxes[0] = tbxInput1;
+            textBoxes[1] = tbxInput2;
+            textBoxes[2] = tbxInput3;
+            textBoxes[3] = tbxInput4;
+            textBoxes[4] = tbxInput5;
+
+            
+            int sum = 0;
+            int count = 0;
+            for (int i = 0; i < textBoxes.Length; i++)
+            {
+                if (textBoxes[i].Text != null && textBoxes[i].Text.Trim() != "")
+                {
+                    sum += int.Parse(textBoxes[i].Text);
+                    ++count;
+                }
+
+            }
+            lblResult.Text = "평균" + sum / count;
+        }
     }
 }
-
