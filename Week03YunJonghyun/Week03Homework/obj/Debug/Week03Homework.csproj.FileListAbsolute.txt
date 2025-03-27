@@ -1,0 +1,10 @@
+E:\C#\Week03YunJonghyun\Week03Homework\bin\Debug\Week03Homework.exe.config
+E:\C#\Week03YunJonghyun\Week03Homework\bin\Debug\Week03Homework.exe
+E:\C#\Week03YunJonghyun\Week03Homework\bin\Debug\Week03Homework.pdb
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.csproj.AssemblyReference.cache
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.FormMain.resources
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.Properties.Resources.resources
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.csproj.GenerateResource.cache
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.csproj.CoreCompileInputs.cache
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.exe
+E:\C#\Week03YunJonghyun\Week03Homework\obj\Debug\Week03Homework.pdb
