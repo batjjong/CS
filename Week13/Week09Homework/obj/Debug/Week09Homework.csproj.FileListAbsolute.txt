@@ -1,0 +1,20 @@
+C:\202244106\12주차 기본자료\Week09Homework\bin\Debug\Week09Homework.exe.config
+C:\202244106\12주차 기본자료\Week09Homework\bin\Debug\Week09Homework.exe
+C:\202244106\12주차 기본자료\Week09Homework\bin\Debug\Week09Homework.pdb
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.csproj.AssemblyReference.cache
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.FormManager.resources
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.Properties.Resources.resources
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.csproj.GenerateResource.cache
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.csproj.CoreCompileInputs.cache
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.exe
+C:\202244106\12주차 기본자료\Week09Homework\obj\Debug\Week09Homework.pdb
+C:\202244106\Week12\Week09Homework\bin\Debug\Week09Homework.exe.config
+C:\202244106\Week12\Week09Homework\bin\Debug\Week09Homework.exe
+C:\202244106\Week12\Week09Homework\bin\Debug\Week09Homework.pdb
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.csproj.AssemblyReference.cache
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.FormManager.resources
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.Properties.Resources.resources
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.csproj.GenerateResource.cache
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.csproj.CoreCompileInputs.cache
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.exe
+C:\202244106\Week12\Week09Homework\obj\Debug\Week09Homework.pdb
